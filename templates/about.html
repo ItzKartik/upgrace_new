@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block navbar %}
+<style>
+    .gif_wrapper{
+        padding: 30px;
+        text-align: center !important;
+    }
+</style>
+    <div class="col-md-12" style="margin: 100px 0px 100px 0px;" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="50">
+        <div class="container mx-auto text-center" style="color: #4A00E0">
+            <h1 style="font-weight: 900; color: #8E2DE2;">About Us</h1><Br>
+            <br>
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <div class="gif_wrapper">
+                        <img class="mx-auto text-center" style="max-width: 100%; height: 200px; display: block;" src="{% static 'logo/logo_white.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 mx-auto text-left" style="margin-top: 40px;">
+                    <p><a href="{% url 'index' %}">Upgrace.in</a> runs by an individual person who's name is not revealed yet,
+                        but his mission is all about helping teenagers, developers and working class peoples
+                        to make their work free, fast and simple.<br><Br>
+                        He is continuosly working hard on creating new types of web apps which can speed up our works.<Br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you peoples want to contribute on his journey then you're open to do so. <a href="#join_us">JOIN HERE</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

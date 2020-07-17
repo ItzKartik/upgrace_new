@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block navbar %}
+<style>
+    .gif_wrapper{
+        padding: 30px;
+        text-align: center !important;
+    }
+    td, tr{
+        border: none !important;
+    }
+</style>
+    <div class="col-md-12" style="margin: 100px 0px 100px 0px;" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="50">
+        <div class="container mx-auto text-center" style="color: #4A00E0">
+            <h1 style="font-weight: 900; color: #8E2DE2;">Contact Us</h1><Br>
+            <br>
+            <div class="row">
+                <div class="col-md-6" style="margin-top: 50px;">
+                    <div class="mx-auto text-center table-responsive">
+                        <table class="table">
+                            <tr>
+                                <td><i style="font-size: 1.5rem;" class="fas fa-phone-alt"></i></td>
+                                <td>+1 213-861-9313</td>
+                            </tr>
+                            <tr>
+                                <td><i style="font-size: 1.5rem;" class="far fa-envelope"></i></td>
+                                <td>upgrace.in@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td><i style="font-size: 1.5rem;" class="fas fa-map-marker-alt"></i></td>
+                                <td>2943  Farnum Road, New York</td>
+                            </tr>
+                        </table>    
+                    </div>
+                </div>
+                <form action="{% url 'followers:contact_us' %}" method="POST" class="col-md-6 ml-auto text-right">
+                    <div class="row">{% csrf_token %}
+                        <div class="form-group col-md-6">
+                            <label for="field_name"></label>
+                            <input type="text" name="field_name" id="field_name" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="field_email"></label>
+                            <input type="email" name="field_email" id="field_email" class="form-control" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="field_sub"></label>
+                        <input type="text" name="subject" id="field_sub" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="msg" id="field_msg" rows="5" class="form-control" placeholder="Your Message..."></textarea>
+                    </div>
+                    <div class="mx-auto text-center">
+                        <button type="submit" class="mx-auto text-center btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

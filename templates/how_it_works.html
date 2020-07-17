@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block navbar %}
+<style>
+    .gif_wrapper{
+        padding: 30px;
+        text-align: center !important;
+    }
+</style>
+    <div class="col-md-12" style="margin: 100px 0px 100px 0px;" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="50">
+        <div class="container mx-auto text-center" style="color: #4A00E0">
+            <h1 style="font-weight: 900; color: #8E2DE2;">How It Works</h1><Br>
+            <p>It works "For The People & By The People". Individuals who want to meet as well as rise expertise through our network
+                Join Us. <Br>
+                &nbsp;&nbsp;&nbsp;&nbsp;We with our technology & support help them via originating a chain of network on this gloal
+                world.<Br>
+                They get all tpes of rights and supports related to our services as follows :
+            </p>
+            <br>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="gif_wrapper col-sm-3">
+                        <p style="color: #4A00E0;">Originate FanBase</p>
+                        <a target="_blank" href="{% static 'gifs/followers.gif' %}"><img style="max-width: 100%; height: auto; display: block;" src="{% static 'gifs/followers.gif' %}" alt=""></a>
+                    </div>
+                    <div class="gif_wrapper col-sm-3">
+                        <p style="color: rgb(255, 0, 0);">Generate Likes</p>
+                        <a target="_blank" href="{% static 'gifs/likes.gif' %}"><img style="max-width: 100%; height: auto; display: block;" src="{% static 'gifs/likes.gif' %}" alt=""></a>
+                    </div>
+                    <div class="gif_wrapper col-sm-3">
+                        <p style="color: rgb(126, 126, 126);">Fetch Hashtags</p>
+                        <a target="_blank" href="{% static 'gifs/hashtags.gif' %}"><img style="max-width: 100%; height: auto; display: block;" src="{% static 'gifs/hashtags.gif' %}" alt=""></a>
+                    </div>
+                    <div class="gif_wrapper col-sm-3">
+                        <p style="color: rgb(0, 0, 0);">Create Comments</p>
+                        <a target="_blank" href="{% static 'gifs/comments.gif' %}"><img style="max-width: 100%; height: auto; display: block;" src="{% static 'gifs/comments.gif' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

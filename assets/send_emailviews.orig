@@ -1,0 +1,19 @@
+# msg = MIMEMultipart('alternative')
+# msg['Subject'] = subject
+# html = """
+#     <html>
+#       <head></head>
+#       <body>
+#         <h1>Hi Prince</h1>
+#         <p>You Just Got An Email From %s. Please Mail Him Back On %s.</p>
+#         <p>His Message Is : %s</p>
+#       </body>
+#     </html>
+#     """ % (name, email, message)
+# part2 = MIMEText(html, 'html')
+# msg.attach(part2)
+# smtp_server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
+# smtp_server.login('guptapz111@gmail.com', '(Kartik@737)')
+# smtp_server.sendmail("guptapz111@gmail.com", 'upgrace.in@gmail.com', msg.as_string())
+# smtp_server.close()
+# return redirect('index')

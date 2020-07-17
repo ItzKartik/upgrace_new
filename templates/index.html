@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block navbar %}
+    <div class="col-md-12" style="margin: 100px 0px 150px 0px;" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="50">
+        <div class="col-md-6 mx-auto text-center">
+            <div class="card-body mx-auto">
+                <h1 style="color: #8E2DE2; font-weight: 600;" class="">Our Services</h1><Br>
+                <hr>    
+                <div class="row" style="margin-top: 30px;">
+                    <a style="margin-top: 30px; color: rgb(255, 0, 0); font-weight: 700 !important;" target="_blank" class="mx-auto col-md-3" href="{% url 'likes:index' %}">
+                        <div class="mx-auto text-center">
+                            <i style="font-size: 2.5rem; color: rgb(255, 0, 0);"
+                            class="mx-auto far fa-heart"></i>
+                            <h6><br>Generate<br>Likes</h6>
+                        </div>
+                    </a>
+                    <a style="margin-top: 30px; color: #4A00E0; font-weight: 700 !important;" target="_blank" class="mx-auto col-md-3" href="{% url 'followers:index' %}">
+                        <div class="mx-auto text-center">
+                            <i style="font-size: 2.5rem; color: #4A00E0;"
+                            class="mx-auto fas fa-users"></i>
+                            <h6><br>Originate<br>FanBase</h6>
+                        </div>
+                    </a>
+                    <a style="margin-top: 30px; color: rgb(126, 126, 126); font-weight: 700 !important;" target="_blank" class="mx-auto col-md-3" href="{% url 'hashtags:index' %}">
+                        <div class="mx-auto text-center">
+                            <i style="font-size: 2.5rem; color: rgb(126, 126, 126);"
+                            class="mx-auto fas fa-hashtag"></i>
+                            <h6><br>Fetch<br>Hashtags</h6>
+                        </div>
+                    </a>
+                    <a style="margin-top: 30px; color: rgb(0, 0, 0); font-weight: 700 !important;" target="_blank" class="mx-auto col-md-3" href="{% url 'comments:index' %}">
+                        <div class="mx-auto text-center">
+                            <i style="font-size: 2.5rem; color: rgb(0, 0, 0);"
+                            class="mx-auto fas fa-comments"></i>
+                            <h6><br>Create<br>Comments</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
